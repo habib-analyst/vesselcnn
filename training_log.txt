@@ -1,0 +1,31 @@
+VesselCNN training log — VesselMNIST3D, seed 42, batch 32, AdamW lr 2e-3,
+class-weighted CE [0.5633, 4.4500], octahedral augmentation, OneCycle cosine
+over a 30-epoch plan. Per-epoch validation on the official val split (191).
+Checkpoint selection: best (val balanced accuracy, val AUC).
+
+epoch  1  train_loss 0.6803  train_acc 0.7124  val_acc 0.2304  val_balanced_acc 0.5453  val_auc 0.8115  (172.7s)
+epoch  2  train_loss 0.6664  train_acc 0.6217  val_acc 0.2932  val_balanced_acc 0.5808  val_auc 0.7910  (220.4s)
+epoch  3  train_loss 0.6398  train_acc 0.6757  val_acc 0.7277  val_balanced_acc 0.6880  val_auc 0.7821  (221.1s)
+epoch  4  train_loss 0.6578  train_acc 0.6869  val_acc 0.6073  val_balanced_acc 0.7188  val_auc 0.8093  (196.7s)
+epoch  5  train_loss 0.6493  train_acc 0.6644  val_acc 0.6335  val_balanced_acc 0.7336  val_auc 0.8141  (148.5s)
+epoch  6  train_loss 0.6364  train_acc 0.6749  val_acc 0.8010  val_balanced_acc 0.7887  val_auc 0.8179  (226.3s)
+epoch  7  train_loss 0.6460  train_acc 0.6772  val_acc 0.7382  val_balanced_acc 0.7335  val_auc 0.8144  (214.9s)
+epoch  8  train_loss 0.6308  train_acc 0.6891  val_acc 0.7592  val_balanced_acc 0.7848  val_auc 0.8187  (186.6s)
+epoch  9  train_loss 0.6369  train_acc 0.6921  val_acc 0.6649  val_balanced_acc 0.7513  val_auc 0.8090  (208.5s)
+epoch 10  train_loss 0.6401  train_acc 0.6719  val_acc 0.4293  val_balanced_acc 0.6577  val_auc 0.8080  (179.2s)
+epoch 11  train_loss 0.6479  train_acc 0.6569  val_acc 0.6649  val_balanced_acc 0.7316  val_auc 0.8010  (173.2s)
+epoch 12  train_loss 0.6354  train_acc 0.6614  val_acc 0.7853  val_balanced_acc 0.7403  val_auc 0.8053  (190.0s)
+epoch 13  train_loss 0.6352  train_acc 0.6502  val_acc 0.5759  val_balanced_acc 0.7010  val_auc 0.8004  (206.1s)
+epoch 14  train_loss 0.6283  train_acc 0.6502  val_acc 0.8586  val_balanced_acc 0.6434  val_auc 0.7899  (135.5s)
+epoch 15  train_loss 0.6339  train_acc 0.6772  val_acc 0.5759  val_balanced_acc 0.7010  val_auc 0.8045  (135.3s)
+epoch 16  train_loss 0.6310  train_acc 0.6674  val_acc 0.8063  val_balanced_acc 0.7522  val_auc 0.8125  (129.2s)
+epoch 17  train_loss 0.6138  train_acc 0.6989  val_acc 0.7068  val_balanced_acc 0.7355  val_auc 0.7991  (118.9s)
+epoch 18  train_loss 0.6269  train_acc 0.6704  val_acc 0.6178  val_balanced_acc 0.7247  val_auc 0.8123  (164.0s)
+
+Best checkpoint: epoch 6 (val balanced accuracy 0.7887, val AUC 0.8179).
+STOPPED after epoch 18 of the planned 30 on a measured plateau: epochs 7-18
+never beat the epoch-6 selection key; train loss stayed in 0.61-0.65 and val
+AUC in 0.79-0.82 from epoch 5 on. The shipped weights are the epoch-6
+checkpoint; the test split was evaluated once from the packaged weights by
+scripts/evaluate.py (see assets/vesselcnn_metrics.json).
+Total epoch time over 18 epochs: 3227.1s on a 2-core CPU VM.

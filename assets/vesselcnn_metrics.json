@@ -1,0 +1,216 @@
+{
+  "model": "VesselCNN",
+  "version": "0.1.0",
+  "dataset": "VesselMNIST3D (MedMNIST v2), official splits",
+  "seed": 42,
+  "epochs_planned": 30,
+  "epochs_run": 18,
+  "training_stop": "Stopped after epoch 18 of 30 on a measured plateau: epochs 7-18 never beat the epoch-6 selection key (val balanced accuracy 0.7887, val AUC 0.8179); train loss flat in 0.61-0.65 and val AUC in 0.79-0.82 since epoch 5. The shipped weights are the epoch-6 checkpoint.",
+  "batch": 32,
+  "lr": 0.002,
+  "class_weights": [
+    0.5633,
+    4.45
+  ],
+  "best_epoch": 6,
+  "best_val_acc": 0.801,
+  "best_val_balanced_acc": 0.7887,
+  "best_val_auc": 0.8179,
+  "train_seconds_total": 3227.1,
+  "train_mean_exact": 0.01933,
+  "train_std_exact": 0.13768,
+  "test_evaluation": "Test split evaluated once, from the packaged epoch-6 weights (model.safetensors), by scripts/evaluate.py \u2014 the same protocol as scripts/train.py's final block, which did not run because of the early stop. Full record: assets/evaluation_results.json.",
+  "test": {
+    "accuracy": 0.7539,
+    "auc": 0.7219,
+    "balanced_accuracy": 0.638,
+    "confusion_matrix": [
+      [
+        267,
+        72
+      ],
+      [
+        22,
+        21
+      ]
+    ],
+    "per_class_recall": {
+      "vessel": 0.7876,
+      "aneurysm": 0.4884
+    },
+    "per_class_precision": {
+      "vessel": 0.9239,
+      "aneurysm": 0.2258
+    },
+    "class_counts": [
+      339,
+      43
+    ],
+    "majority_baseline": 0.8874,
+    "n": 382
+  },
+  "epoch_log": [
+    {
+      "epoch": 1,
+      "train_loss": 0.6803,
+      "train_acc": 0.7124,
+      "val_acc": 0.2304,
+      "val_balanced_acc": 0.5453,
+      "val_auc": 0.8115,
+      "epoch_seconds": 172.7
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.6664,
+      "train_acc": 0.6217,
+      "val_acc": 0.2932,
+      "val_balanced_acc": 0.5808,
+      "val_auc": 0.791,
+      "epoch_seconds": 220.4
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.6398,
+      "train_acc": 0.6757,
+      "val_acc": 0.7277,
+      "val_balanced_acc": 0.688,
+      "val_auc": 0.7821,
+      "epoch_seconds": 221.1
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.6578,
+      "train_acc": 0.6869,
+      "val_acc": 0.6073,
+      "val_balanced_acc": 0.7188,
+      "val_auc": 0.8093,
+      "epoch_seconds": 196.7
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.6493,
+      "train_acc": 0.6644,
+      "val_acc": 0.6335,
+      "val_balanced_acc": 0.7336,
+      "val_auc": 0.8141,
+      "epoch_seconds": 148.5
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.6364,
+      "train_acc": 0.6749,
+      "val_acc": 0.801,
+      "val_balanced_acc": 0.7887,
+      "val_auc": 0.8179,
+      "epoch_seconds": 226.3
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.646,
+      "train_acc": 0.6772,
+      "val_acc": 0.7382,
+      "val_balanced_acc": 0.7335,
+      "val_auc": 0.8144,
+      "epoch_seconds": 214.9
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.6308,
+      "train_acc": 0.6891,
+      "val_acc": 0.7592,
+      "val_balanced_acc": 0.7848,
+      "val_auc": 0.8187,
+      "epoch_seconds": 186.6
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.6369,
+      "train_acc": 0.6921,
+      "val_acc": 0.6649,
+      "val_balanced_acc": 0.7513,
+      "val_auc": 0.809,
+      "epoch_seconds": 208.5
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.6401,
+      "train_acc": 0.6719,
+      "val_acc": 0.4293,
+      "val_balanced_acc": 0.6577,
+      "val_auc": 0.808,
+      "epoch_seconds": 179.2
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.6479,
+      "train_acc": 0.6569,
+      "val_acc": 0.6649,
+      "val_balanced_acc": 0.7316,
+      "val_auc": 0.801,
+      "epoch_seconds": 173.2
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.6354,
+      "train_acc": 0.6614,
+      "val_acc": 0.7853,
+      "val_balanced_acc": 0.7403,
+      "val_auc": 0.8053,
+      "epoch_seconds": 190.0
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.6352,
+      "train_acc": 0.6502,
+      "val_acc": 0.5759,
+      "val_balanced_acc": 0.701,
+      "val_auc": 0.8004,
+      "epoch_seconds": 206.1
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.6283,
+      "train_acc": 0.6502,
+      "val_acc": 0.8586,
+      "val_balanced_acc": 0.6434,
+      "val_auc": 0.7899,
+      "epoch_seconds": 135.5
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.6339,
+      "train_acc": 0.6772,
+      "val_acc": 0.5759,
+      "val_balanced_acc": 0.701,
+      "val_auc": 0.8045,
+      "epoch_seconds": 135.3
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.631,
+      "train_acc": 0.6674,
+      "val_acc": 0.8063,
+      "val_balanced_acc": 0.7522,
+      "val_auc": 0.8125,
+      "epoch_seconds": 129.2
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.6138,
+      "train_acc": 0.6989,
+      "val_acc": 0.7068,
+      "val_balanced_acc": 0.7355,
+      "val_auc": 0.7991,
+      "epoch_seconds": 118.9
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.6269,
+      "train_acc": 0.6704,
+      "val_acc": 0.6178,
+      "val_balanced_acc": 0.7247,
+      "val_auc": 0.8123,
+      "epoch_seconds": 164.0
+    }
+  ]
+}

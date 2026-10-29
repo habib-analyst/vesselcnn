@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vesselcnn"
+version = "0.1.0"
+description = "VesselCNN: a compact from-scratch 3D CNN for VesselMNIST3D vessel-vs-aneurysm classification — verified weights, ONNX export, and a metrics-reproduction script."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Habib Ur Rehman" }]
+requires-python = ">=3.9"
+dependencies = [
+  "torch>=2.0",
+  "numpy>=1.24",
+  "safetensors>=0.4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "scikit-learn>=1.3", "onnxruntime>=1.16"]
+
+[project.urls]
+Homepage = "https://github.com/habib-analyst/vesselcnn"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,1 @@
+{"architectures":["VesselCNN"],"dropout":0.3,"id2label":{"0":"vessel","1":"aneurysm"},"in_ch":1,"label2id":{"aneurysm":1,"vessel":0},"model_type":"vesselcnn","num_classes":2,"num_parameters":104722,"torch_dtype":"float32","train_mean":0.01933,"train_std":0.13768,"volume_size":28}

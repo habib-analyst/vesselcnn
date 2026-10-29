@@ -1,0 +1,53 @@
+{
+  "selection_rule": "first false negative, first false positive, most-confident correct aneurysm, median correct vessel \u2014 all in test order, from the packaged-weights evaluation in assets/evaluation_results.json",
+  "samples": [
+    {
+      "file": "false_negative_1.npy",
+      "role": "false_negative",
+      "test_index": 1,
+      "label": "aneurysm",
+      "predicted": "vessel",
+      "probabilities": {
+        "vessel": 0.6904,
+        "aneurysm": 0.3096
+      },
+      "occupancy_voxels": 254
+    },
+    {
+      "file": "false_positive_61.npy",
+      "role": "false_positive",
+      "test_index": 61,
+      "label": "vessel",
+      "predicted": "aneurysm",
+      "probabilities": {
+        "vessel": 0.4454,
+        "aneurysm": 0.5546
+      },
+      "occupancy_voxels": 486
+    },
+    {
+      "file": "correct_aneurysm_most_confident_40.npy",
+      "role": "correct_aneurysm_most_confident",
+      "test_index": 40,
+      "label": "aneurysm",
+      "predicted": "aneurysm",
+      "probabilities": {
+        "vessel": 0.281,
+        "aneurysm": 0.719
+      },
+      "occupancy_voxels": 1249
+    },
+    {
+      "file": "correct_vessel_median_214.npy",
+      "role": "correct_vessel_median",
+      "test_index": 214,
+      "label": "vessel",
+      "predicted": "vessel",
+      "probabilities": {
+        "vessel": 0.5894,
+        "aneurysm": 0.4106
+      },
+      "occupancy_voxels": 380
+    }
+  ]
+}

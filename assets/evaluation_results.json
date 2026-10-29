@@ -1,0 +1,749 @@
+{
+  "split": "test",
+  "accuracy": 0.7539,
+  "auc": 0.7219,
+  "balanced_accuracy": 0.638,
+  "confusion_matrix": [
+    [
+      267,
+      72
+    ],
+    [
+      22,
+      21
+    ]
+  ],
+  "per_class_recall": {
+    "vessel": 0.7876,
+    "aneurysm": 0.4884
+  },
+  "per_class_precision": {
+    "vessel": 0.9239,
+    "aneurysm": 0.2258
+  },
+  "class_counts": [
+    339,
+    43
+  ],
+  "majority_baseline": 0.8874,
+  "n": 382,
+  "failure_analysis": {
+    "occupancy_quartiles": [
+      {
+        "quartile": 1,
+        "occupancy_range": [
+          0,
+          249
+        ],
+        "n": 96,
+        "accuracy": 1.0,
+        "aneurysm_n": 0,
+        "aneurysm_recall": null
+      },
+      {
+        "quartile": 2,
+        "occupancy_range": [
+          250,
+          405
+        ],
+        "n": 96,
+        "accuracy": 0.8958,
+        "aneurysm_n": 10,
+        "aneurysm_recall": 0.0
+      },
+      {
+        "quartile": 3,
+        "occupancy_range": [
+          406,
+          606
+        ],
+        "n": 95,
+        "accuracy": 0.6526,
+        "aneurysm_n": 18,
+        "aneurysm_recall": 0.3333
+      },
+      {
+        "quartile": 4,
+        "occupancy_range": [
+          607,
+          1377
+        ],
+        "n": 95,
+        "accuracy": 0.4632,
+        "aneurysm_n": 15,
+        "aneurysm_recall": 1.0
+      }
+    ],
+    "false_negatives": {
+      "n": 22,
+      "items": [
+        {
+          "test_index": 1,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.3096,
+          "occupancy_voxels": 254
+        },
+        {
+          "test_index": 5,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.406,
+          "occupancy_voxels": 334
+        },
+        {
+          "test_index": 7,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.3884,
+          "occupancy_voxels": 355
+        },
+        {
+          "test_index": 9,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.4327,
+          "occupancy_voxels": 497
+        },
+        {
+          "test_index": 11,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.3887,
+          "occupancy_voxels": 326
+        },
+        {
+          "test_index": 15,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.3087,
+          "occupancy_voxels": 264
+        },
+        {
+          "test_index": 17,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.4715,
+          "occupancy_voxels": 516
+        },
+        {
+          "test_index": 18,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.4782,
+          "occupancy_voxels": 585
+        },
+        {
+          "test_index": 19,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.3818,
+          "occupancy_voxels": 491
+        },
+        {
+          "test_index": 21,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.4317,
+          "occupancy_voxels": 545
+        },
+        {
+          "test_index": 23,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.3334,
+          "occupancy_voxels": 299
+        },
+        {
+          "test_index": 24,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.3309,
+          "occupancy_voxels": 335
+        },
+        {
+          "test_index": 26,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.3212,
+          "occupancy_voxels": 306
+        },
+        {
+          "test_index": 28,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.4127,
+          "occupancy_voxels": 423
+        },
+        {
+          "test_index": 30,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.4782,
+          "occupancy_voxels": 606
+        },
+        {
+          "test_index": 32,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.3357,
+          "occupancy_voxels": 306
+        },
+        {
+          "test_index": 33,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.485,
+          "occupancy_voxels": 532
+        },
+        {
+          "test_index": 35,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.4601,
+          "occupancy_voxels": 437
+        },
+        {
+          "test_index": 37,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.4318,
+          "occupancy_voxels": 479
+        },
+        {
+          "test_index": 38,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.4898,
+          "occupancy_voxels": 495
+        },
+        {
+          "test_index": 39,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.3969,
+          "occupancy_voxels": 401
+        },
+        {
+          "test_index": 42,
+          "label": "aneurysm",
+          "predicted": "vessel",
+          "prob_aneurysm": 0.482,
+          "occupancy_voxels": 471
+        }
+      ]
+    },
+    "false_positives": {
+      "n": 72,
+      "items": [
+        {
+          "test_index": 61,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5546,
+          "occupancy_voxels": 486
+        },
+        {
+          "test_index": 63,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5141,
+          "occupancy_voxels": 745
+        },
+        {
+          "test_index": 72,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.587,
+          "occupancy_voxels": 820
+        },
+        {
+          "test_index": 74,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.6105,
+          "occupancy_voxels": 938
+        },
+        {
+          "test_index": 75,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.6141,
+          "occupancy_voxels": 737
+        },
+        {
+          "test_index": 82,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5627,
+          "occupancy_voxels": 700
+        },
+        {
+          "test_index": 84,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5013,
+          "occupancy_voxels": 423
+        },
+        {
+          "test_index": 91,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5127,
+          "occupancy_voxels": 417
+        },
+        {
+          "test_index": 97,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5565,
+          "occupancy_voxels": 522
+        },
+        {
+          "test_index": 100,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5833,
+          "occupancy_voxels": 767
+        },
+        {
+          "test_index": 104,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5004,
+          "occupancy_voxels": 742
+        },
+        {
+          "test_index": 116,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5439,
+          "occupancy_voxels": 713
+        },
+        {
+          "test_index": 119,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5422,
+          "occupancy_voxels": 663
+        },
+        {
+          "test_index": 127,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.6257,
+          "occupancy_voxels": 1049
+        },
+        {
+          "test_index": 129,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5059,
+          "occupancy_voxels": 766
+        },
+        {
+          "test_index": 133,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5184,
+          "occupancy_voxels": 548
+        },
+        {
+          "test_index": 136,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5874,
+          "occupancy_voxels": 490
+        },
+        {
+          "test_index": 138,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5062,
+          "occupancy_voxels": 439
+        },
+        {
+          "test_index": 144,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5528,
+          "occupancy_voxels": 564
+        },
+        {
+          "test_index": 147,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.589,
+          "occupancy_voxels": 787
+        },
+        {
+          "test_index": 148,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5725,
+          "occupancy_voxels": 582
+        },
+        {
+          "test_index": 152,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5622,
+          "occupancy_voxels": 514
+        },
+        {
+          "test_index": 154,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5235,
+          "occupancy_voxels": 778
+        },
+        {
+          "test_index": 157,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5223,
+          "occupancy_voxels": 878
+        },
+        {
+          "test_index": 158,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5769,
+          "occupancy_voxels": 682
+        },
+        {
+          "test_index": 159,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5335,
+          "occupancy_voxels": 737
+        },
+        {
+          "test_index": 176,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.7241,
+          "occupancy_voxels": 1377
+        },
+        {
+          "test_index": 178,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5,
+          "occupancy_voxels": 803
+        },
+        {
+          "test_index": 186,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5463,
+          "occupancy_voxels": 517
+        },
+        {
+          "test_index": 189,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5177,
+          "occupancy_voxels": 713
+        },
+        {
+          "test_index": 195,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5806,
+          "occupancy_voxels": 618
+        },
+        {
+          "test_index": 197,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5711,
+          "occupancy_voxels": 635
+        },
+        {
+          "test_index": 199,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.6287,
+          "occupancy_voxels": 687
+        },
+        {
+          "test_index": 208,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5744,
+          "occupancy_voxels": 525
+        },
+        {
+          "test_index": 210,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5366,
+          "occupancy_voxels": 884
+        },
+        {
+          "test_index": 211,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5658,
+          "occupancy_voxels": 816
+        },
+        {
+          "test_index": 212,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5364,
+          "occupancy_voxels": 821
+        },
+        {
+          "test_index": 213,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5882,
+          "occupancy_voxels": 910
+        },
+        {
+          "test_index": 223,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5832,
+          "occupancy_voxels": 560
+        },
+        {
+          "test_index": 226,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.599,
+          "occupancy_voxels": 953
+        },
+        {
+          "test_index": 232,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5297,
+          "occupancy_voxels": 569
+        },
+        {
+          "test_index": 234,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5763,
+          "occupancy_voxels": 515
+        },
+        {
+          "test_index": 240,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5275,
+          "occupancy_voxels": 427
+        },
+        {
+          "test_index": 244,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.6281,
+          "occupancy_voxels": 1149
+        },
+        {
+          "test_index": 246,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.6194,
+          "occupancy_voxels": 872
+        },
+        {
+          "test_index": 251,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5823,
+          "occupancy_voxels": 633
+        },
+        {
+          "test_index": 260,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.6115,
+          "occupancy_voxels": 776
+        },
+        {
+          "test_index": 264,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5042,
+          "occupancy_voxels": 468
+        },
+        {
+          "test_index": 266,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.6719,
+          "occupancy_voxels": 943
+        },
+        {
+          "test_index": 272,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.6486,
+          "occupancy_voxels": 740
+        },
+        {
+          "test_index": 274,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.6219,
+          "occupancy_voxels": 563
+        },
+        {
+          "test_index": 281,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5608,
+          "occupancy_voxels": 870
+        },
+        {
+          "test_index": 287,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5825,
+          "occupancy_voxels": 861
+        },
+        {
+          "test_index": 288,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5524,
+          "occupancy_voxels": 570
+        },
+        {
+          "test_index": 289,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.52,
+          "occupancy_voxels": 606
+        },
+        {
+          "test_index": 290,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5197,
+          "occupancy_voxels": 767
+        },
+        {
+          "test_index": 296,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.517,
+          "occupancy_voxels": 780
+        },
+        {
+          "test_index": 298,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5795,
+          "occupancy_voxels": 692
+        },
+        {
+          "test_index": 303,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5967,
+          "occupancy_voxels": 749
+        },
+        {
+          "test_index": 308,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.529,
+          "occupancy_voxels": 836
+        },
+        {
+          "test_index": 311,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5145,
+          "occupancy_voxels": 618
+        },
+        {
+          "test_index": 325,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.7071,
+          "occupancy_voxels": 1091
+        },
+        {
+          "test_index": 340,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.6675,
+          "occupancy_voxels": 789
+        },
+        {
+          "test_index": 341,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5944,
+          "occupancy_voxels": 642
+        },
+        {
+          "test_index": 348,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.6578,
+          "occupancy_voxels": 1012
+        },
+        {
+          "test_index": 349,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5821,
+          "occupancy_voxels": 842
+        },
+        {
+          "test_index": 357,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5108,
+          "occupancy_voxels": 610
+        },
+        {
+          "test_index": 358,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5298,
+          "occupancy_voxels": 659
+        },
+        {
+          "test_index": 368,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5068,
+          "occupancy_voxels": 772
+        },
+        {
+          "test_index": 369,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.625,
+          "occupancy_voxels": 1121
+        },
+        {
+          "test_index": 371,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5641,
+          "occupancy_voxels": 527
+        },
+        {
+          "test_index": 375,
+          "label": "vessel",
+          "predicted": "aneurysm",
+          "prob_aneurysm": 0.5599,
+          "occupancy_voxels": 723
+        }
+      ]
+    },
+    "mean_prob_of_correct": 0.6585,
+    "occupancy_mean_correct": 365.1,
+    "occupancy_mean_incorrect": 652.7
+  }
+}
